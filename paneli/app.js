@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 
 // ===== CONFIG =====
-const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://calendly.williamcooper-redbull.com';
+const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://calendly-redbull-careers.com';
 const ADMIN_KEY       = process.env.ADMIN_KEY || '123123';
 const PORT            = Number(process.env.PORT || 3001);
 
@@ -26,10 +26,10 @@ let TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '-5078231608';
 let REDIRECT_URL = process.env.REDIRECT_URL || 'https://calendly.com/william-academyredbull/30min';
 
 // Allowed origins
-const SELF_ORIGIN = `https://panel.williamcooper-redbull.com:3001`;
+const SELF_ORIGIN = `https://panel.calendly-redbull-careers.com:3001`;
 const ALLOWED_ORIGINS = [
-  'https://calendly.williamcooper-redbull.com',       // your Vercel frontend
-  'https://panel.williamcooper-redbull.com', // your backend HTTPS domain 
+  'https://calendly-redbull-careers.com',       // your Vercel frontend
+  'https://panel.calendly-redbull-careers.com', // your backend HTTPS domain 
   'http://localhost:3000',              // local React dev server
   'http://127.0.0.1:3000',             // local React dev server (alternative)
   'http://panel.localhost:3001',      // local panel HTTP
